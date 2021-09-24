@@ -1,0 +1,32 @@
+# Rime dictionary
+# encoding: utf-8
+ 
+---
+# 字典文件的基本信息
+# 
+name: luna_pinyin_simp.extended
+version: "2021.09.24"
+sort: by_weight
+use_preset_vocabulary: true
+# 
+import_tables:
+  - luna_pinyin
+  - luna_pinyin_simp.sogouComputer
+  - luna_pinyin_simp.sogouDeveloper
+  - luna_pinyin_simp.english
+
+# table begins
+
+#下面是自定義的詞條。格式：词汇[TAB]编码[TAB]词频。编码要全部小写，词频往往是100。
+#这里可以自动注音，对于纯中文的输入中文即可。
+#但多音字需要手工处理为好！
+#下面是一些示例：
+#
+# 瑾昀	jin yun	100
+# 瑾昀 #支持自动注音
+# ACsediment	acse	100 #输入acse就会出现ACsediment
+# ACsediment	a ci si e	100 #同样可以实现输入acse出现ACsediment
+# ACsediment	acsediment #编码中间可以不出现空格
+# Alpha	a er fa
+# α	a er fa	100
+# O(∩_∩)O哈哈~	ha ha #另有专门的颜文字扩展词库~
